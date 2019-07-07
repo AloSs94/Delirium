@@ -1,0 +1,49 @@
+/* CSS Document */
+
+*{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+body{
+	background-color:#CCC;
+}
+.navbar{
+	
+	padding:0 16px;
+	border-radius: 0;
+	border: 0;
+}
+.bg-primary, .btn-primary{
+	background-color:#343f57 !important;
+	border: none;
+}
+.navbar-nav .nav-link:hover{
+	color: #4bb7df !important;
+	transition: color 0.20s linear 0.5s;
+}
+.btn-primary:hover{
+	background-color: #80CCFC !important;
+	color:#000  ;
+}
+
+.product-1,.product-3{
+	text-align: center;
+	padding: 1rem;
+	
+}
+
+.product-2{
+	text-align: center;
+	padding-bottom:1rem;
+	padding:10px;
+}
+.product-2>img{
+	padding:10px;
+	margin: 10px;
+	width:auto ;
+	height:230px;
+}
+.card{
+	margin-top: 10rem;
+	
+}
+ 

@@ -1,0 +1,200 @@
+/* CSS Document */
+
+/*---------------------
+	Estilos del Diseño
+-----------------------*/
+*{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+.bg-primary {
+  background-color: #343f57 !important;
+}
+.navbar{
+	
+	padding:0 16px;
+	border-radius: 0;
+	border: 0;
+}
+.navbar-nav .nav-link:hover{
+	color: #4bb7df !important;
+	transition: color 0.19s linear 0.3s;
+	}
+.dropdown-menu, .dropdown-item, .dropdown-header{
+	background-color: #343f57 !important;
+	color: #4bb7df !important;
+}
+.dropdown-menu .dropdown-header{
+	background-color: #343f57 !important;
+	color: white !important;
+}
+.dropdown-menu>li>a:hover{
+	color:white !important;
+	transition: color 0.19s linear 0.3s;
+}
+.quienesSomos{
+	background-color:#1E60F9;
+	height:100vh;
+	padding-top:50%;
+}
+.quienesSomos>*{
+	color: white;
+	padding-top:10%;
+}
+.quienesSomos>p,h1{
+	font-size: 2rem;
+	padding-left:20px;
+	padding-top:60px; 
+}
+.bolsaseffect,.cuadernoeffect,.carpetaeffect,.mochilaeffect{
+width:100%;
+height:100%;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+
+.cuadernoeffect .overlay,.bolsaseffect .overlay,.carpetaeffect .overlay,.mochilaeffect .overlay{
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5); /*Color de fondo mediante R(red)G(reen)B(lue)A(lpha)
+	define que tan opca será un color*/
+transition:all .4s ease-in-out;
+}
+
+.cuadernoeffect img,.bolsaseffect img,.carpetaeffect img,.mochilaeffect img{
+	position:relative;
+	transition:all .4s linear 
+}
+
+.cuadernoeffect h2,.bolsaseffect h2,.carpetaeffect h2,.mochilaeffect h2 {
+	text-transform:uppercase;
+	color:#4bb7df;
+	text-align:center;
+	position:relative;
+	font-size:17px;
+	background:rgba(0,0,0,0.6);
+	transform:translatey(-100px);
+	transition:all .2s ease-in-out;
+	padding:10px;
+}
+
+.cuadernoeffect a.tienda,.bolsaseffect a.tienda,.carpetaeffect a.tienda,.mochilaeffect a.tienda {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#4bb7df;
+border:1px solid #4bb7df;
+background-color:transparent;
+opacity:0;
+transition:all .2s ease-in-out;
+margin:50px 0 0;
+padding:7px 14px;
+}
+
+.cuadernoeffect a:hover,.bolsaseffect a:hover, .carpetaeffect a:hover,.mochilaeffect a:hover {
+	box-shadow:0 0 5px #4bb7df; /*Crea una   sombra en  el botón al pasar el  ratón por encima*/
+	
+}
+
+.cuadernoeffect:hover img,.bolsaseffect:hover img, .carpetaeffect:hover img,.mochilaeffect:hover img {
+	transform:scale(1.2); /*Define una transformación 2D en escala.
+	Lo que hace */
+}
+
+.cuadernoeffect:hover .overlay,.bolsaseffect:hover .overlay, .carpetaeffect:hover .overlay,.mochilaeffect:hover .overlay{
+opacity:1;
+filter:alpha(opacity=100); /*Para IE8  se  ocupa esta propiedad*/
+}
+
+.cuadernoeffect:hover h2,.cuadernoeffect a.tienda,.bolsaseffect:hover h2,.bolsaseffect:hover a.tienda,.carpetaeffect:hover h2,.carpetaeffect a.tienda,.mochilaeffect:hover h2,.mochilaeffect:hover a.tienda {
+opacity:1;
+
+transform:translatey(0);
+}
+
+.cuadernoeffect:hover a.tienda,.bolsaseffect:hover a.tienda, .carpetaeffect:hover a.tienda,.mochilaeffect:hover a.tienda {
+/*-webkit-transition-delay:.2s;*/
+transition-delay:.2s;
+}
+.mochilaeffect img{
+	margin-top:50px;
+}
+
+.Servicios{
+	background-color:#1E60F9;
+	height: 100vh;
+	
+}
+
+.Servicios h1, h3{
+	padding-top: 10%;
+	font-weight: bold;
+	padding-bottom: 5px;
+	color: white;
+}
+.Servicios p{
+	color: white;
+}
+#SobreNosotros p{
+	font-size: 1.2rem;
+	text-align: center;
+	
+}
+
+footer{
+	background-color:#343f57;
+	color: white;
+	
+}
+#redes-sociales{
+	font-size: 2rem;
+	text-align: center;
+}
+#redes-sociales ul{
+	list-style: none;
+}
+#redes-sociales ul li{
+	display: inline-block
+}
+
+.fa-facebook,.fa-instagram,.fa-twitter{
+	color: #9B9B9C;
+	
+}
+
+.fa-facebook:hover{
+	color: #3B5998;
+}
+.fa-twitter:hover{
+	color:#55ACEE;
+}
+.fa-instagram:hover{
+	color:#D176F9;
+}
+/* Twitter */
+
+
+
+/*Se coloca !important porque sobreescribe algún estilo predefinido de bootstrap*/
+/*
+ 
+}
+NOTAS: Al manejar rem (medidas relativas/relative meassures) se toma por defecto los pixeles que tiene la etiqueta <html> (16 px)
+Selectores:
+	Universal (*) --> Selecciona todos los  elementos de la  página. También  se puede aplaicar a elementos padre - hijo
+	Agrupar(,) --> Sirve para agrupar elementos independientes en una sola regla.
+	De Hijo (>) -->Selecciona un elemento que es hijo directo de otro.
+
+Medidas:
+	vh (viewport Height): Se  basa en el alto de la ventana. 1 vh es el  1% del  alto del  area de visualización. Mientras que 100 es el 100%.
+
+	vw (viewport width): Se basa en lo  ancho  de la vista de la  ventana
+	1vw (ancho del  area de visualización)
+	
+*/
